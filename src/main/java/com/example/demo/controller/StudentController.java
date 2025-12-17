@@ -7,8 +7,8 @@ import com.example.demo.entity.Student;
 
 public class StudentController{
    @Autowired
-   StudentService stdrepo
+   StudentService stdser
    @PostMapping("/addStudent")
-   public Student assStudent(@RequestBody Student st)
-   return stdser,poststudent(st);
+   public Student addStudent(@RequestBody Student st)
+   return stdser.poststudent(st);
 }
