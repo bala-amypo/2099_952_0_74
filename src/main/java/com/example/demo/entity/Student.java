@@ -3,8 +3,8 @@ import java.time.*;
 import jakarta.persistence.*;
 @Entity
 public class Student{
-    @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)   
+    @Id     //primary key
+    @GeneratedValue(strategy=GenerationType.IDENTITY)     //to autogenerate the primary key(optional) 
     private Long id;
     private String name;
     private String dept;
